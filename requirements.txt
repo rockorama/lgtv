@@ -5,6 +5,7 @@ pyobjc-framework-ApplicationServices==10.1
 pyobjc-framework-Cocoa==10.1
 pyobjc-framework-CoreText==10.1
 pyobjc-framework-Quartz==10.1
+python-decouple==3.8
 six==1.16.0
 sqlitedict==2.1.0
 websockets==12.0
