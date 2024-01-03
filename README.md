@@ -71,13 +71,12 @@
 
 ## Update your settings:
 
-Open the `control-tv.py` file and change the following:
-```python
-# Your settings
-IP = '192.168.68.59' # -->> THE IP OF YOUR TV
-Input = 'HDMI_1'
-Input_Mode = 'pc'
-Input_Name = 'MacBook Pro'
+Copy the `.env-example` file and rename it to `.env` then change the settings to apply to your TV:
+```
+IP=192.168.68.99 # -->> THE IP OF YOUR TV
+INPUT=HDMI_1
+INPUT_MODE=pc
+INPUT_NAME=Mac
 ```
 
 ## Run the script

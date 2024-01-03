@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 import subprocess
 import plistlib
-import time
 import asyncio
 import threading
 from bscpylgtv import WebOsClient
 from pynput import keyboard
+from decouple import config
 
 # Your settings
-IP = '192.168.68.110'
-Input = 'HDMI_1'
-Input_Mode = 'pc'
-Input_Name = 'Mac Studio'
+IP = config("IP")
+Input = config("INPUT", 'HDMI_1')
+Input_Mode = config("INPUT_MODE", 'pc')
+Input_Name = config("INPUT_NAME", "Mac")
 
 # Create an asyncio event loop
 loop = asyncio.get_event_loop()
