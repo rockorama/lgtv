@@ -8,10 +8,10 @@ from bscpylgtv import WebOsClient
 from pynput import keyboard
 
 # Your settings
-IP = '192.168.68.59'
+IP = '192.168.68.110'
 Input = 'HDMI_1'
 Input_Mode = 'pc'
-Input_Name = 'MacBook Pro'
+Input_Name = 'Mac Studio'
 
 # Create an asyncio event loop
 loop = asyncio.get_event_loop()
@@ -58,13 +58,18 @@ async def volume_down():
     await ensure_connected()
     await client.volume_down()
 
+async def mute():
+    await ensure_connected()
+    muted = await client.get_muted()
+    await client.set_mute(not muted)
 
 async def volume_control(key):
     if key == keyboard.Key.media_volume_up:
         await volume_up()
     elif key == keyboard.Key.media_volume_down:
         await volume_down()
-
+    elif key == keyboard.Key.media_volume_mute:
+        await mute()
 
 def on_press(key):
     if control_audio:  # Check if the TV is selected as the audio device
