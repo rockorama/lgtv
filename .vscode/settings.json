@@ -1,0 +1,14 @@
+{
+  "python.formatting.provider": "autopep8",
+  "editor.defaultFormatter": "ms-python.python",
+  "python.testing.pytestEnabled": true,
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.10.0/envs/lgtv/bin/python",
+  "python.terminal.activateEnvironment": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#00ff48",
+    "statusBar.foreground": "#000000"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

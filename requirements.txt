@@ -1,0 +1,10 @@
+bscpylgtv==0.4.5
+pynput==1.7.6
+pyobjc-core==10.1
+pyobjc-framework-ApplicationServices==10.1
+pyobjc-framework-Cocoa==10.1
+pyobjc-framework-CoreText==10.1
+pyobjc-framework-Quartz==10.1
+six==1.16.0
+sqlitedict==2.1.0
+websockets==12.0

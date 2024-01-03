@@ -1,0 +1,6 @@
+/ControlLGTV.app
+.aiopylgtv.sqlite
+.build
+__pycache__
+.pytest_cache
+.DS_Store
